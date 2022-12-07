@@ -31,6 +31,10 @@ body{
     text-align: center;
 }
 
+#screenDate::first-letter{
+    text-transform: uppercase;
+}
+
 #screen{
     width: 400px;
     min-height: 100%;
@@ -45,10 +49,6 @@ body{
     animation: slide 1s;
 }
 
-#screen.desbloqueio{
-    display: none;
-}
-
 footer{
     position: absolute;
     bottom: 0;
@@ -58,60 +58,4 @@ a{
     color: black;
     text-decoration: none;
     font-size: large;
-}
-
-
-img{
-    width: 80px; 
-    height: 80px;
-    border-radius: 50%;
-    border: solid 2px rgb(255, 145, 0);
-}
-
-p{
-    margin: 15px;
-    font-size: larger;
-}
-
-#screen-desbloqueio{
-    width: 400px;
-    min-height: 100%;
-    border-radius: 10px;
-    font-family: 'Ubuntu', sans-serif;
-
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#screen-desbloqueio.reset{
-    position: absolute;
-    display: flex;
-    animation: slide 1s;
-    transition: 1s;
-}
-
-@keyframes slide {
-    from{
-        margin-top: 10%;
-        opacity: 0%;
-    }
-    50%{
-        opacity: 100%;
-    }
-    to{
-        margin: 0;
-        opacity: 100%;
-    }
-    
-}
-
-#password{
-    width: 220px;
-    height: 20px;
-    padding: 5px;
-    border-radius: 8px;
-    border: solid 1px grey;
-    text-align: center;
 }
