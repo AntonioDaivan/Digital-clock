@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;600&family=Roboto+Mono&family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg ,#ffb42a, #ff9100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+body.dark{
+    background: linear-gradient(45deg ,#201545, rgb(8, 1, 22));
+    color: #aaa;
+}
+
+body.dark a{
+    color: #8f8f8f;
+}
+
+div.icon{
+    height: 25%;
+}
+
+#screenTime{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:4rem;
+    font-weight: 700;
+}
+
+#screenDate{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#screenDate::first-letter{
+    text-transform: uppercase;
+}
+
+#screen{
+    width: 400px;
+    min-height: 100%;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
