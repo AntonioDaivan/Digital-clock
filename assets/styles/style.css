@@ -30,6 +30,10 @@ div.icon{
     height: 25%;
 }
 
+.bx{
+    cursor: pointer;
+}
+
 #screenTime{
     font-family: 'Ubuntu', sans-serif;
     font-size:4rem;
